@@ -204,6 +204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 53920509}
   - component: {fileID: 53920510}
+  - component: {fileID: 53920511}
   m_Layer: 0
   m_Name: 2 - SoundController
   m_TagString: Untagged
@@ -321,6 +322,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &53920511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53920508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b1226b64036ad4eb5dd3dc03562e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RightSound: {fileID: 8300000, guid: fecd344a28e4bb44e847c0823769ec28, type: 3}
+  WrongSound: {fileID: 0}
 --- !u!1 &89865668
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +378,7 @@ GameObject:
   - component: {fileID: 104057270}
   - component: {fileID: 104057269}
   - component: {fileID: 104057271}
+  - component: {fileID: 104057268}
   m_Layer: 0
   m_Name: 0 - Main Camera
   m_TagString: MainCamera
@@ -370,6 +386,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!81 &104057268
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104057267}
+  m_Enabled: 1
 --- !u!20 &104057269
 Camera:
   m_ObjectHideFlags: 0
@@ -583,7 +607,7 @@ GameObject:
   - component: {fileID: 148576839}
   - component: {fileID: 148576838}
   m_Layer: 5
-  m_Name: 2 - Broken Lamp (Vidro) (4)
+  m_Name: 6 - Paper (Paper)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -627,7 +651,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77f876ef9506691419ee76138007a036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86a842d79ef98a74cbd6b11af89ea254, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -909,7 +933,7 @@ GameObject:
   - component: {fileID: 309830569}
   - component: {fileID: 309830568}
   m_Layer: 5
-  m_Name: 2 - Broken Lamp (Vidro) (3)
+  m_Name: 5 - Emputy Bottle  (Vidro)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -953,7 +977,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77f876ef9506691419ee76138007a036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b97ab3534eaa0d044b9e77fd0c5e2e83, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1129,7 +1153,7 @@ GameObject:
   - component: {fileID: 427999607}
   - component: {fileID: 427999606}
   m_Layer: 5
-  m_Name: 2 - Broken Lamp (Vidro) (5)
+  m_Name: 7 - Paper's Ball (Paper)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1173,7 +1197,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77f876ef9506691419ee76138007a036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: da4200caf71e7314c85b9fc7c6cefc22, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1277,7 +1301,7 @@ GameObject:
   - component: {fileID: 444347303}
   - component: {fileID: 444347302}
   m_Layer: 5
-  m_Name: 0 - BrokenBottle (Vidro)
+  m_Name: 0 - Plastic Cup (Plastic)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1321,7 +1345,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 507be6db82d038d4bbae0546d9e1a773, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9818ebfa12f62c468833be5a10673f4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1349,6 +1373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 462036989}
   - component: {fileID: 462036990}
+  - component: {fileID: 462036991}
   m_Layer: 0
   m_Name: 4 - Metal
   m_TagString: Untagged
@@ -1396,6 +1421,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9691849, y: 1.1386683}
   m_EdgeRadius: 0
+--- !u!114 &462036991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462036988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74982acfdf26cbb48a6cc9a0aed5dfcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoxColl: {fileID: 0}
+  ItemGen: {fileID: 1214150797}
+  UI: {fileID: 1554911575}
+  Right: {fileID: 8300000, guid: fecd344a28e4bb44e847c0823769ec28, type: 3}
 --- !u!1 &465431467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,6 +1657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 497301024}
   - component: {fileID: 497301025}
+  - component: {fileID: 497301026}
   m_Layer: 0
   m_Name: 2 - Papel
   m_TagString: Untagged
@@ -1663,6 +1705,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.92209816, y: 1.0584259}
   m_EdgeRadius: 0
+--- !u!114 &497301026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 497301023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0831a61b7b8e68c488f1119d75c66909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoxColl: {fileID: 0}
+  ItemGen: {fileID: 1214150797}
+  UI: {fileID: 1554911575}
 --- !u!1 &526727812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,7 +1732,7 @@ GameObject:
   - component: {fileID: 526727815}
   - component: {fileID: 526727814}
   m_Layer: 5
-  m_Name: 2 - Broken Lamp (Vidro) (1)
+  m_Name: 3 - Broken Lamp (Vidro)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1719,7 +1776,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77f876ef9506691419ee76138007a036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1d0eeda41539a7b4b90235ff0e6751ee, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1749,7 +1806,7 @@ GameObject:
   - component: {fileID: 549219716}
   - component: {fileID: 549219715}
   m_Layer: 5
-  m_Name: 1 - EmputyBottle (Vidro)
+  m_Name: 1 - Emputy Plastic Bottle (Plastic)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1793,7 +1850,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 30ec5038578ddf14091a9c4621d2110e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c664089ca6b3bd541aab86188fd2395f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2217,7 +2274,7 @@ GameObject:
   - component: {fileID: 601106736}
   - component: {fileID: 601106735}
   m_Layer: 5
-  m_Name: 2 - Broken Lamp (Vidro) (12)
+  m_Name: 14 - Can (Metal)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2242,7 +2299,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77f876ef9506691419ee76138007a036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dd2cd0a5c5743be4887494f3199d5088, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2291,7 +2348,7 @@ GameObject:
   - component: {fileID: 663109755}
   - component: {fileID: 663109754}
   m_Layer: 5
-  m_Name: 2 - Broken Lamp (Vidro) (2)
+  m_Name: 4 - Broken Bottle (Vidro)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2335,7 +2392,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77f876ef9506691419ee76138007a036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cdc6e524355191b4291eaf8699b6bc4c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2527,7 +2584,6 @@ GameObject:
   - component: {fileID: 815371079}
   - component: {fileID: 815371083}
   - component: {fileID: 815371082}
-  - component: {fileID: 815371084}
   m_Layer: 10
   m_Name: 0 - Player
   m_TagString: Player
@@ -2658,7 +2714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4fb02310d9c9d1489143891eefbd6b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 50
+  Speed: 20
 --- !u!95 &815371083
 Animator:
   serializedVersion: 3
@@ -2678,14 +2734,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!81 &815371084
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815371077}
-  m_Enabled: 1
 --- !u!1 &858613156
 GameObject:
   m_ObjectHideFlags: 0
@@ -2698,7 +2746,7 @@ GameObject:
   - component: {fileID: 858613159}
   - component: {fileID: 858613158}
   m_Layer: 5
-  m_Name: 2 - Broken Lamp (Vidro) (7)
+  m_Name: 9 - Roten Fruits (Organic)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2742,7 +2790,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77f876ef9506691419ee76138007a036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 67ff762ac4a4f6a4b833fdf2a59de394, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2804,7 +2852,7 @@ GameObject:
   - component: {fileID: 1000339635}
   - component: {fileID: 1000339634}
   m_Layer: 5
-  m_Name: 2 - Broken Lamp (Vidro) (6)
+  m_Name: 8 - Paper Box (Paper)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2848,7 +2896,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77f876ef9506691419ee76138007a036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 81bdf5c5fc5855b4683aada44f6463c1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2876,6 +2924,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1031312861}
   - component: {fileID: 1031312862}
+  - component: {fileID: 1031312863}
   m_Layer: 0
   m_Name: 1 - Vidro
   m_TagString: Untagged
@@ -2923,6 +2972,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9026232, y: 1.0584259}
   m_EdgeRadius: 0
+--- !u!114 &1031312863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031312860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 276993c56aefd2d4baa10bf585894271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoxColl: {fileID: 0}
+  ItemGen: {fileID: 1214150797}
+  UI: {fileID: 1554911575}
 --- !u!1 &1078452426
 GameObject:
   m_ObjectHideFlags: 0
@@ -2935,7 +2999,7 @@ GameObject:
   - component: {fileID: 1078452429}
   - component: {fileID: 1078452428}
   m_Layer: 5
-  m_Name: 2 - Broken Lamp (Vidro) (10)
+  m_Name: 12 - Nails (Metal)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2979,7 +3043,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77f876ef9506691419ee76138007a036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f1de1cf2e5e42cb458314eea6fea6fd6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3323,7 +3387,7 @@ GameObject:
   - component: {fileID: 1379751782}
   - component: {fileID: 1379751781}
   m_Layer: 5
-  m_Name: 2 - Broken Lamp (Vidro) (11)
+  m_Name: 13 - Soda's Can (Metal)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3367,7 +3431,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77f876ef9506691419ee76138007a036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 407ab80b0f2b9b8418a90ecb9ea4cbb3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3646,6 +3710,8 @@ MonoBehaviour:
   TextBestScore: {fileID: 2098657393}
   ScoreAtual: 0
   BestScore: 000000000000000000000000
+  SoundMix: {fileID: 53920511}
+  RightDelivery: {fileID: 8300000, guid: fecd344a28e4bb44e847c0823769ec28, type: 3}
 --- !u!4 &1554911576
 Transform:
   m_ObjectHideFlags: 0
@@ -4030,7 +4096,7 @@ GameObject:
   - component: {fileID: 1849009238}
   - component: {fileID: 1849009237}
   m_Layer: 5
-  m_Name: 2 - Broken Lamp (Vidro)
+  m_Name: 2 - Plastic PET (Plastic)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4074,7 +4140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77f876ef9506691419ee76138007a036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5e09eec7de540b641a22433feeaa49f2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4104,7 +4170,7 @@ GameObject:
   - component: {fileID: 1891150142}
   - component: {fileID: 1891150141}
   m_Layer: 5
-  m_Name: 2 - Broken Lamp (Vidro) (8)
+  m_Name: 10 - Roten Baker (Organic)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4148,7 +4214,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77f876ef9506691419ee76138007a036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a0016840ac2457c42b1ae7331b2641e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4178,7 +4244,7 @@ GameObject:
   - component: {fileID: 1909016641}
   - component: {fileID: 1909016640}
   m_Layer: 5
-  m_Name: 2 - Broken Lamp (Vidro) (9)
+  m_Name: 11 -  Roten Fruit (Organic)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4222,7 +4288,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 77f876ef9506691419ee76138007a036, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b19e19140ff002b4ab4b7a8c5dd11f51, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4440,6 +4506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1968559234}
   - component: {fileID: 1968559235}
+  - component: {fileID: 1968559236}
   m_Layer: 0
   m_Name: "3 - Org\xE2nico"
   m_TagString: Untagged
@@ -4487,6 +4554,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.980525, y: 1.1558018}
   m_EdgeRadius: 0
+--- !u!114 &1968559236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968559233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fe60fcf50b3464c8e3fa0816ddeff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BoxColl: {fileID: 0}
+  ItemGen: {fileID: 1214150797}
+  UI: {fileID: 1554911575}
 --- !u!1 &1980762161
 GameObject:
   m_ObjectHideFlags: 0

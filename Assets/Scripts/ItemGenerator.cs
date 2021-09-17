@@ -39,14 +39,14 @@ public class ItemGenerator : MonoBehaviour
     }
     private void ItemGen()
     {
-        if (Tounching != false && Input.GetKeyDown(KeyCode.Space))
+        if (Tounching != false && Input.GetKeyDown(KeyCode.Space) && HaveItem == false)
         {
             TypeGenerator = Random.Range(0, 14);
             Item[TypeGenerator].SetActive(true);
             HaveItem = true;
             return;
         }
-        else if (Tounching != true && Input.GetKeyDown(KeyCode.Space))
+        else if (Tounching != true && Input.GetKeyDown(KeyCode.Space) && HaveItem == true)
         {
             Debug.Log("Can't");
             return;

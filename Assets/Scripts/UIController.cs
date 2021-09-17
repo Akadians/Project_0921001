@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 using TMPro;
 
 public class UIController : MonoBehaviour
@@ -12,6 +13,10 @@ public class UIController : MonoBehaviour
     public TextMeshProUGUI TextBestScore;    
     public int ScoreAtual = 0;
     public List<int> BestScore;
+    public SoundController SoundMix;
+
+    public AudioClip RightDelivery;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -40,14 +45,15 @@ public class UIController : MonoBehaviour
         return;
     }
     public void ScoreAdd(int score = 10)
-    {
+    {        
         ScoreAtual += score;
         Timer -= 5;
+        SoundMix.RightDelivery();
         return;
     }
     public void ScoreLess()
     {
-        Timer += 5;
+        Timer += 5;        
         return;
     }
     public void ScoreUpdate ()
