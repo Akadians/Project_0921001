@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class GameController : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class GameController : MonoBehaviour
 
     public GameObject PausedPanel;
     public GameObject EndPanel;
+
+    public AudioSource BGM;
+    public SoundController AudioMix;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +21,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PauseGame();
-        
+        PauseGame();        
     }
 
     public void PauseGame()
@@ -39,6 +42,7 @@ public class GameController : MonoBehaviour
     public void EndGame ()
     {
         Time.timeScale = 0;
-        EndPanel.SetActive(true);
+        BGM.Stop();
+        EndPanel.SetActive(true); 
     }
 }

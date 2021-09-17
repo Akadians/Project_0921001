@@ -6,6 +6,7 @@ public class ItemGenerator : MonoBehaviour
     public LayerMask Player;
     public bool HaveItem = false;
     public int TypeGenerator;
+    public SoundController AudioMix;
 
     private bool Tounching = false;
     private BoxCollider2D boxColl;
@@ -33,7 +34,7 @@ public class ItemGenerator : MonoBehaviour
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("TouchOut " + TypeGenerator);
+        Debug.Log("TouchOut " + TypeGenerator);        
         Tounching = false;
         return;
     }
@@ -42,6 +43,7 @@ public class ItemGenerator : MonoBehaviour
         if (Tounching != false && Input.GetKeyDown(KeyCode.Space) && HaveItem == false)
         {
             TypeGenerator = Random.Range(0, 14);
+            AudioMix.PickUpItem();
             Item[TypeGenerator].SetActive(true);
             HaveItem = true;
             return;

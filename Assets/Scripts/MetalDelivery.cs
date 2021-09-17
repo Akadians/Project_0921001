@@ -6,12 +6,7 @@ public class MetalDelivery : MonoBehaviour
 {
     public BoxCollider2D BoxColl;
     public ItemGenerator ItemGen;
-    public UIController UI;
-
-    [SerializeField]
-    private AudioClip Right;
-    private bool rightS = false;
-    private bool wrongS = false;
+    public UIController UI;    
 
     private bool Tounching = false;
     // Start is called before the first frame update
@@ -38,8 +33,7 @@ public class MetalDelivery : MonoBehaviour
             {
                 Debug.Log("CheckPoint42");
                 UI.ScoreAdd();
-                ItemGen.HaveItem = false;
-                rightS = true;
+                ItemGen.HaveItem = false;                
                 return;
             }
             else if (ItemGen.HaveItem != false && ItemGen.TypeGenerator < 12)

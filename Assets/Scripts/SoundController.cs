@@ -10,17 +10,12 @@ public class SoundController : MonoBehaviour
     public static AudioSource instance;
 
     public AudioClip RightSound;
-    public AudioClip WrongSound;
+    public AudioClip WrongSound;    
+    public AudioClip PickUpSound;
     // Start is called before the first frame update
     void Start()
     {
         Implements();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
     private void Implements()
     {
@@ -35,5 +30,8 @@ public class SoundController : MonoBehaviour
     {
         SoundController.instance.PlayOneShot(WrongSound);
     }
-
+    public void PickUpItem()
+    {
+        SoundController.instance.PlayOneShot(PickUpSound);
+    }
 }

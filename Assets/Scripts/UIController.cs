@@ -13,9 +13,7 @@ public class UIController : MonoBehaviour
     public TextMeshProUGUI TextBestScore;    
     public int ScoreAtual = 0;
     public List<int> BestScore;
-    public SoundController SoundMix;
-
-    public AudioClip RightDelivery;
+    public SoundController SoundMix;    
     
     // Start is called before the first frame update
     void Start()
@@ -53,7 +51,8 @@ public class UIController : MonoBehaviour
     }
     public void ScoreLess()
     {
-        Timer += 5;        
+        Timer += 5;
+        SoundMix.WrongDelivery();
         return;
     }
     public void ScoreUpdate ()
