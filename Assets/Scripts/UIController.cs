@@ -41,7 +41,14 @@ public class UIController : MonoBehaviour
     }
     public void ScoreAdd(int score = 10)
     {
-        ScoreAtual += score;        
+        ScoreAtual += score;
+        Timer -= 5;
+        return;
+    }
+    public void ScoreLess()
+    {
+        Timer += 5;
+        return;
     }
     public void ScoreUpdate ()
     {
