@@ -9,13 +9,14 @@ public class GameController : MonoBehaviour
 
     public GameObject PausedPanel;
     public GameObject EndPanel;
+    public GameObject StartPanel;
 
     public AudioSource BGM;
     public SoundController AudioMix;
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;
+        Implements();
     }
 
     // Update is called once per frame
@@ -44,5 +45,22 @@ public class GameController : MonoBehaviour
         Time.timeScale = 0;
         BGM.Stop();
         EndPanel.SetActive(true); 
+    }
+    public void UnpauseGame()
+    {
+        Time.timeScale = 1;
+        PausedPanel.SetActive(false);
+        return;
+    }
+    public void StartGame()
+    {
+        StartPanel.SetActive(false);
+        Time.timeScale = 1;
+        BGM.Play();
+    }
+    private void Implements ()
+    {
+        instance = this;
+        Time.timeScale = 0;
     }
 }

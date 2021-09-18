@@ -12,6 +12,7 @@ public class SoundController : MonoBehaviour
     public AudioClip RightSound;
     public AudioClip WrongSound;    
     public AudioClip PickUpSound;
+    public AudioClip Click;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +34,9 @@ public class SoundController : MonoBehaviour
     public void PickUpItem()
     {
         SoundController.instance.PlayOneShot(PickUpSound);
+    }
+    public void ClickButton()
+    {
+        SoundController.instance.PlayOneShot(Click);
     }
 }
