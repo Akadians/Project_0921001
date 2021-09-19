@@ -109,27 +109,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 13860}
+      Script: {instanceID: 13862}
     - Class: 114
-      Script: {instanceID: 13936}
+      Script: {instanceID: 13938}
     - Class: 114
-      Script: {instanceID: 14050}
+      Script: {instanceID: 14052}
     - Class: 114
-      Script: {instanceID: 14166}
+      Script: {instanceID: 14168}
     - Class: 114
-      Script: {instanceID: 14238}
+      Script: {instanceID: 14240}
     - Class: 114
-      Script: {instanceID: 14308}
+      Script: {instanceID: 14310}
     - Class: 114
-      Script: {instanceID: 14774}
+      Script: {instanceID: 14776}
     - Class: 114
-      Script: {instanceID: 14828}
+      Script: {instanceID: 14830}
     - Class: 114
-      Script: {instanceID: 14878}
+      Script: {instanceID: 14880}
     - Class: 114
-      Script: {instanceID: 14912}
+      Script: {instanceID: 14914}
     - Class: 114
-      Script: {instanceID: 14954}
+      Script: {instanceID: 14956}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -188,17 +188,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13698}
     - Class: 114
-      Script: {instanceID: 13936}
+      Script: {instanceID: 13842}
     - Class: 114
-      Script: {instanceID: 14050}
+      Script: {instanceID: 13938}
     - Class: 114
-      Script: {instanceID: 14166}
+      Script: {instanceID: 14052}
     - Class: 114
-      Script: {instanceID: 14476}
+      Script: {instanceID: 14168}
     - Class: 114
-      Script: {instanceID: 14828}
+      Script: {instanceID: 14478}
     - Class: 114
-      Script: {instanceID: 32070}
+      Script: {instanceID: 14830}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -802,6 +802,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 2e7d896c3d748adf0f1463e3b0b3328b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VideoScript
+  - hash:
+      serializedVersion: 2
       Hash: 04ff7363f1831a2eda94460bbdd16393
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1058,12 +1064,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
-  - hash:
-      serializedVersion: 2
-      Hash: 2e7d896c3d748adf0f1463e3b0b3328b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: VideoScript
   platform: 20
   scenePathNames:
   - Assets/Scenes/Title.unity
