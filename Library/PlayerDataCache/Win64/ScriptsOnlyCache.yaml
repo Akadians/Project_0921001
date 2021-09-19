@@ -10,6 +10,7 @@ ScriptsOnlyBuild:
     - PlasticDelivery
     - Player
     - SoundController
+    - TitleController
     - UIController
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
@@ -60,8 +61,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
     - Class: 60
@@ -91,8 +90,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12470}
     - Class: 114
-      Script: {instanceID: 12530}
-    - Class: 114
       Script: {instanceID: 12672}
     - Class: 114
       Script: {instanceID: 12918}
@@ -106,8 +103,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13462}
     - Class: 114
       Script: {instanceID: 13676}
-    - Class: 114
-      Script: {instanceID: 13698}
     - Class: 114
       Script: {instanceID: 13700}
     - Class: 114
@@ -124,8 +119,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14238}
     - Class: 114
       Script: {instanceID: 14308}
-    - Class: 114
-      Script: {instanceID: 14476}
     - Class: 114
       Script: {instanceID: 14774}
     - Class: 114
@@ -153,6 +146,75 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Title.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11364}
+    - Class: 114
+      Script: {instanceID: 11578}
+    - Class: 114
+      Script: {instanceID: 11748}
+    - Class: 114
+      Script: {instanceID: 12470}
+    - Class: 114
+      Script: {instanceID: 12530}
+    - Class: 114
+      Script: {instanceID: 13276}
+    - Class: 114
+      Script: {instanceID: 13676}
+    - Class: 114
+      Script: {instanceID: 13698}
+    - Class: 114
+      Script: {instanceID: 13936}
+    - Class: 114
+      Script: {instanceID: 14050}
+    - Class: 114
+      Script: {instanceID: 14166}
+    - Class: 114
+      Script: {instanceID: 14476}
+    - Class: 114
+      Script: {instanceID: 14828}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -211,7 +273,7 @@ ScriptsOnlyBuild:
     className: PlayerQuitHandler
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 0e594868ec9bd15727623947454c1995
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TitleController
@@ -355,7 +417,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 567af320c5b93947f01272dd594005dd
+      Hash: 46c7900a92c24c44365e7ddab60f717e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIController
@@ -751,7 +813,7 @@ ScriptsOnlyBuild:
     className: CinemachineIndependentImpulseListener
   - hash:
       serializedVersion: 2
-      Hash: 39b42d555e603a86a39fc5dea8d70d46
+      Hash: ecf1d01bcb24ed9bea951648fb6b7408
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SoundController
@@ -991,12 +1053,13 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 20533638b69ff77f90f18ddc7527ce7f
+      Hash: 3072a0ec9e07a61c4d4f2b89df9ef4fe
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
   platform: 19
   scenePathNames:
+  - Assets/Scenes/Title.unity
   - Assets/Scenes/PlayableGame.unity
   playerPath: C:/Users/Igor/FreeLa Project 0921001/Test Build/Cicle - Educational
     Game.exe

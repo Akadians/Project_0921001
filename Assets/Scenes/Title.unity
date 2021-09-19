@@ -2740,7 +2740,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.05
   m_Pitch: 0.94
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3414,6 +3414,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1791920438}
   - component: {fileID: 1791920439}
+  - component: {fileID: 1791920440}
   m_Layer: 0
   m_Name: 0 - Background
   m_TagString: Untagged
@@ -3443,7 +3444,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791920437}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 6b8b158a2b796cb4dab891536876983b, type: 3}
+  m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 0.75
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 519420031}
@@ -3460,15 +3461,28 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: 
+  m_Url: file://C:/Users/Igor/FreeLa Project 0921001/Assets/Arts/002.webm
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
+--- !u!114 &1791920440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791920437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dca840b592ace446a69be3397707945, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bg: {fileID: 0}
 --- !u!1 &1836595400
 GameObject:
   m_ObjectHideFlags: 0
