@@ -30,6 +30,24 @@ public class Player : MonoBehaviour
         direction = new Vector2(horizontalMoviment, verticalMoviment);
 
         rigB.MovePosition(rigB.position + direction * Speed * Time.deltaTime);
+
+        if (direction != Vector2.zero)
+        {
+            anim.SetBool("Walking", true);
+
+            if (Input.GetAxis("Horizontal") < 0f)
+            {
+                transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            }
+            else if (Input.GetAxis("Horizontal") > 0f)
+            {                
+                transform.eulerAngles = new Vector3(0f, 180f, 0f);
+            }
+        }
+        else
+        {
+            anim.SetBool("Walking", false);
+        }
     }
 
     void Implements ()
